@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="Ie=edge">
+    <title>3 Twlvs</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  
+  
+  <body>
+  
+    <header>
+        <h1>3Twlvs</h1> 
+        <nav class="topnav">
+          <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a id = 'create' href="#create_account">Create Account</a></li>
+          <li><a id = 'login' href="login">Login</a></li>
+          </ul>
+        </nav>
+    </header>
+    <main>
+      <h2>Review your facility now.</h2>
+        <form class="form" action ="">
+          <!-- <label for="facilityName">Facility Name:</label> -->
+            <input id = "facilityName" name ="facilityName" type="text" placeholder="Facility Name*" required>
+            <br />
+          <!-- <label for="Address">Address:</label> -->
+            <input id = "address" name ="address" type="text" placeholder="Address*" required>
+            <br />
+          <!-- <label for="city">City:</label> -->
+            <input id = "city" name ="city" type="text" placeholder="City*" required>
+            <br />
+          <!-- <label for="state">State:</label> -->
+            <input id = "state" name ="state" type="text" placeholder="State*" required>
+            <br />
+          <!-- <label for="zipCode">Zip Code:</label> -->
+            <input id = "zipCode" name ="zipCode" type="text" placeholder="Zip Code*" required>
+            <br />
+            
+          <!-- <label for="review">Review:</label> -->
+            <textarea id="review" placeholder="Review" name="about" rows="8" cols="60"></textarea>
+          <div class = "slideContainer">
+            <label for = "Busyness">Busyness:</label>
+              <input type="range" min="1" max="5" value="1" class="slider" id = "myRangeOne" required>
+              <p>Value: <span id="demoOne"></span></p>
+
+            <label for = "location">Location:</label>
+              <input type="range" min="1" max="5" value="1" class="slider" id = "myRangeTwo" required>
+              <p>Value: <span id="demoTwo"></span></p>
+
+            <label for = "Teamwork">Teamwork:</label>
+              <input type="range" min="1" max="5" value="1" class="slider" id = "myRangeThree" required>
+              <p>Value: <span id="demoThree"></span></p>
+
+            <label for = "Overall">Overall:</label>
+              <input type="range" min="1" max="5" value="1" class="slider" id = "myRangeFour" required>
+            <br/>
+            <p>Value: <span id="demoFour"></span></p>
+            <br/>
+            <label for = "break">Did you receive breaks?</label>
+            <input type="radio" id ="yes" name = "breaks" value = "yes">
+              <label for = "break">Yes</label>
+              <input type="radio" id ="no" name = "breaks" value = "no">
+              <label for = "break">No</label>
+          </div>  
+            <p>Required *</p>
+          <br>
+          <button id = 'btnSubmit'>Submit Review</button>
+      </form>
+      <!-- <h3>Reviewed Facilities:</h3> -->
+    </main>
+    <footer>
+      <p>&copy 2024 3Twlvs</p>
+      <nav class = "bottom-nav">
+        <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+        <a href="https://www.linkedin.com/" class="fa fa-linkedin"></a>
+      </nav>
+    </footer>  
+	<script src="index.js"></script>
+  </body>
+</html>
